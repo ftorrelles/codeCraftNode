@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
 router.post("/emails/contact", async (req, res) => {
     const { name, email, phone, comment } = req.body;
     await sendEmail({
-        to: "torrellesf93@gmail.com",
+        to: "contacto@biupoll.com.co",
         subject: "Mensaje de pagina web",
         html: ` 
 				<h1>Hola Biupoll, alguien escribio en tu pagina web</h1>
